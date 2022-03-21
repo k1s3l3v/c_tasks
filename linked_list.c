@@ -1,13 +1,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define true
-#define false
 #define nullptr
-#include <stdbool.h>
-#define isCompatible(x, type) _Generic(x, type: true, default: false)
 #include <stdio.h>
 #include <stdlib.h>
 #include <malloc.h>
-#include <stdbool.h>
 
 typedef struct item {
 	int* value;
@@ -37,8 +33,7 @@ item* create() {
 	return i;
 }
 
-void display()
-{
+void display() {
 	item* i;
 	i = head;
 	if (i == NULL) {
