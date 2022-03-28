@@ -43,7 +43,7 @@ int main() {
 		if (str_[i] == '\n' && str_[i + 1] == '\n') while (str_[i + 1] == '\n') {
 			for (j = i + 1; j < strlen(str_); j++) str_[j] = str_[j + 1];	
 		}
-		while (str_[i] == '.' || str_[i] == ',' || str_[i] == '?' || str_[i] == ':' || str_[i] == ';' || str_[i] == '!' || str_[i] == '"' || str_[i] == "'") {
+		while (str_[i] == '~' || str_[i] == '|' || str_[i] == '_' || str_[i] == '-' || str_[i] == '+' || str_[i] == '#' || str_[i] == '(' || str_[i] == '*' || str_[i] == ')' || str_[i] == '&' || str_[i] == '/' || str_[i] == '.' || str_[i] == ',' || str_[i] == '?' || str_[i] == ':' || str_[i] == ';' || str_[i] == '!' || str_[i] == '"' || str_[i] == "'" || str_[i] == '@' || str_[i] == '%' || str_[i] == '`' || str_[i] == '{' || str_[i] == '}' || str_[i] == '[' || str_[i] == ']' || str_[i] == '=' || str_[i] == '<') {
 			for (j = i; j < strlen(str_); j++) str_[j] = str_[j + 1];
 		}
 	}
